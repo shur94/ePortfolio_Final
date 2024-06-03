@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ePortfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4c6faf;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            padding: 2em;
+            margin-bottom: 1em;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2, h3, h4 {
+            border-bottom: 2px solid #4c6faf;
+            padding-bottom: 0.5em;
+        }
+        p, ul {
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        a {
+            color: #4c6faf;
+            text-decoration: underline; /* Underline all hyperlinks */
+        }
+        a:hover {
+            text-decoration: none; /* Remove underline on hover */
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My ePortfolio</h1>
+        <nav>
+            <a href="index.html">Portfolio</a>
+            <a href="Self_Assessment.html">Self Assessment</a>
+            <a href="system_implementation.html">System Implementation</a>
+            <a href="system_testing.html">System Testing</a>
+            <a href="github_links.html">GitHub Links</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="profile">
+            <h2>Profile</h2>
+            <p>This is a portfolio to present my learning outcomes from the Object Oriented Programming module.</p>
+        </section>
+        <section id="system-design">
+            <h2>System Design</h2>
+            <p><a href="https://github.com/shur94/ePortfolio/tree/main/Implementation%20(Week%2011)">System Design Repository</a></p>
+            <p>The assignment was to design software to support driverless cars.</p>
+            <p>As instructed, I have designed software to assist the process of 'recognition of obstacles and logical decision of stopping the car'.</p>
+            <p>With references from various materials, I have completed designing based on backgrounds as below:</p>
+            <ul>
+                <li>Use Case Diagram: to present the foundational architecture of the software</li>
+                <li>Class Diagram: to present data types and classes that will be used in the software</li>
+                <li>Activity Diagram: to represent the flow of activities to illustrate the software's behaviour</li>
+            </ul>
+            <p>Although the final piece of the design still lacks many details that could have been used to improve, the design was created to progress.</p>
+        </section>
+        <section id="system-implementation">
+            <h2>System Implementation</h2>
+            <p><a href="https://github.com/shur94/ePortfolio/tree/main/System%20Design%20(Week%207)">System Implementation Repository</a></p>
+            <p>The next assignment was to build software to support driverless cars, based on system design that was previously submitted.</p>
+            <p>As instructed, I have completed the coding process (Python) for a software.</p>
+            <p>Again, with references from various materials, following two codings are created:</p>
+            <h3>1. driverless_system.py</h3>
+            <p>It consists of several classes that simulate the functionality of a driverless car system with classes, of which details can be accessed via README of the project:</p>
+            <ul>
+                <li><b>DriverlessSystem:</b> This class represents the main system controlling the driverless car.</li>
+                <li><b>Camera:</b> This class represents the camera module of the driverless car.</li>
+                <li><b>Data:</b> This class represents the data storage module of the driverless car.</li>
+                <li><b>Obstacle:</b> This class represents the obstacle detection module of the driverless car.</li>
+                <li><b>Decision:</b> This class represents the decision-making module of the driverless car.</li>
+            </ul>
+            <h3>2. test_driverless_system.py</h3>
+            <p>It consists the testing code using the unittest(Python, n.d.) framework to test the functionality of the driverless car system. Similarly, details can be accessed via README of this project:</p>
+            <ul>
+                <li><b>test_make_decision:</b> Tests the make_decision method of the DriverlessSystem class.</li>
+                <li><b>test_detect_obstacle:</b> Tests the detect_obstacle method of the DriverlessSystem class.</li>
+                <li><b>test_store_data:</b> Tests the store_data method of the DriverlessSystem class.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
